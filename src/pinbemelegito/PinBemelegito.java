@@ -1,5 +1,4 @@
 package pinbemelegito;
-
 import java.util.Scanner;
 
 public class PinBemelegito {
@@ -11,11 +10,12 @@ public class PinBemelegito {
         Scanner scn = new Scanner(System.in);
         //szamTomb feltöltése számokkal és kiiratás másik ciklussal!
         for (int i = 0; i < 10;i++) {
-            szamTomb[i] = i-1;
-            System.out.print(szamTomb[i]);
+            szamTomb[i] = i;
+            System.out.print(szamTomb[i]+"  ");
+            if(i % 3 == 0){
+                System.out.println("");
+            }
         }
-        
-        System.out.println(szamTomb[4]);
         
         //Pinkód regisztrálása
         System.out.printf("Pinkód regisztrálása: ");
