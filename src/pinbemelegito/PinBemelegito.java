@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class PinBemelegito {
 
-    static int pinkod_reg, pinkod_be, probalkozas, maxProbalkozas, pinMin, pinMax;
-    static boolean joPin, joHossz;
-    static int[] szamTomb = new int[10];
+    private int pinkod_reg, pinkod_be, probalkozas, maxProbalkozas, pinMin, pinMax;
+    private boolean joPin, joHossz;
+    private int[] szamTomb = new int[10];
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         //szamTomb feltöltése számokkal és kiiratás másik ciklussal!
@@ -17,19 +17,7 @@ public class PinBemelegito {
             }
         }
         
-        //Pinkód regisztrálása
-        System.out.printf("Pinkód regisztrálása: ");
-        pinkod_reg = scn.nextInt();
         
-        joHossz = pinkod_reg >= pinMin || pinkod_reg <= pinMax;
-        
-        while(!joHossz){
-            System.out.printf("Pinkód regisztrálása: ");
-            pinkod_reg = scn.nextInt();
-            joHossz = pinkod_reg >= pinMin || pinkod_reg <= pinMax;
-        }
-        
-        System.out.println("Pinkód sikeresen beállítva! ");
 
         
         //
